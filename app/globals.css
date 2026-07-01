@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-serif: "Source Serif 4", Georgia, serif;
+    --font-sans: "Inter", system-ui, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Offset anchor targets so the sticky header never covers a heading. */
+    scroll-padding-top: 5.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-paper text-charcoal font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: #0f1e33;
+    color: #f6f4ef;
+  }
+
+  /* Consistent, restrained focus ring for keyboard users. */
+  :focus-visible {
+    outline: 2px solid #b08d57;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  .container-content {
+    @apply mx-auto w-full max-w-content px-6 sm:px-8 lg:px-12;
+  }
+
+  .eyebrow {
+    @apply font-sans text-xs font-medium uppercase tracking-eyebrow text-bronze;
+  }
+
+  /* Thin rule used to sit under section eyebrows. */
+  .rule {
+    @apply h-px w-10 bg-bronze/60;
+  }
+}
+
+/* Respect users who prefer reduced motion — disable scroll animations. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

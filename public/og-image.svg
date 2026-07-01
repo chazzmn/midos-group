@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Midos Group">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F1E33"/>
+      <stop offset="1" stop-color="#0B1626"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g stroke="#ffffff" stroke-opacity="0.06" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+  </g>
+  <g stroke="#B08D57" stroke-opacity="0.5" stroke-width="1.5" fill="none">
+    <path d="M1200 120 L820 630"/>
+    <path d="M1200 300 L960 630"/>
+    <rect x="900" y="150" width="170" height="170"/>
+  </g>
+  <text x="90" y="300" font-family="Georgia, 'Times New Roman', serif" font-size="92" font-weight="600" fill="#F6F4EF">Midos Group</text>
+  <text x="94" y="360" font-family="Arial, Helvetica, sans-serif" font-size="30" letter-spacing="1.5" fill="#F6F4EF" fill-opacity="0.72">Private Real Estate Investment &#183; London</text>
+  <rect x="94" y="392" width="64" height="3" fill="#B08D57"/>
+</svg>
